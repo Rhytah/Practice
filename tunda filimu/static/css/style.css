@@ -1,0 +1,104 @@
+body {
+    font-family: "Lato", sans-serif;
+    color: goldenrod;
+    transition: background-color .5s;
+    background: url(../images/curtains.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(168, 102, 16, 0.616);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+#signup{
+    display: none;
+    width:40%;
+    margin-left: 40%;
+    height:500px;
+    color:rgb(16, 16, 85);
+    background: rgba(119, 86, 2, 0.74);
+    font-size:16px;
+     
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #302626;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+
+  }
+
+.tab{
+    /* padding: 03px; */
+    box-sizing: border-box;
+    float: left;
+  }
+
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 10px;width: 100px;}
+  .sidenav a {font-size: 12px;}
+}
+
+
+
+@media only screen and (max-width:600px){
+    body{
+        color: rgb(92, 112, 177);
+    }
+    .sidenav {
+        height: 100%;
+        width:0;
+        position: fixed;;
+        z-index: 0.5;
+        top: 0;
+        left: 0;
+        background-color: rgba(127, 168, 16, 0.616);
+        overflow-x: hidden;
+        transition: 0.5s;
+        font-size:8px;
+        padding-top: 60px;
+    }
+
+    
+    #main {
+        transition: margin-left .8s;
+        padding: 8px;
+    }
+
+} 
